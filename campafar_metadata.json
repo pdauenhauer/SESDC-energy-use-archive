@@ -1,0 +1,55 @@
+
+{
+    "metadata":{
+        "start_time":"2015-01-02 00:00:21",
+        "end_time":"2015-12-04 23:59:04",
+        "time_zone": "EAT",
+        "implementing_organization": "Wind Empowerment",
+        "sample_frequency_unit": "minutes",
+        "sample_frequency_value": 1,
+        "project_url":"http://windempowerment.org/blog/2016/02/06/wind-empowerment-project-in-ethiopia/",
+        "system_description": "Wind Resources Assessment",
+        "data_description": "A wind resource campaign was initiated in 
+                            the university of Semara in the Afar region, 
+                            with the installation of an anemometer and a data logger.",
+        "contact_information":{
+            "name":"Aran Eales",
+            "email":"aran.eales@strath.ac.uk",
+        },
+        "location":{
+            "description":"Semara, Ethopia",
+        },
+        "funding_sources":[],
+        "errata": [],
+        "system":{
+            "type":"wind_assessment",
+            "system_diagram_url":"",
+            "generation":[
+                {
+                    "resource": "wind",
+                    "resource_type": "anenometer",
+                    "description": "",
+                    "column_names": ["wind_ms_1","wind_dir"]
+                }
+            ],
+            "energy_storage":[
+                {
+                    "description":"battery storage (for anenometer?)",
+                    "number_of_units":1,
+                    "unit_info":{
+                        "unit_dc_v":4,
+                    },
+                    "column_names":["batt_v"]
+                }
+            ],
+            "distribution":[],
+            "load":[],
+            "other":[
+                {
+                    "description": "temperature measurement",
+                    "column_names": ["temp_c"]
+                }
+            ],
+        },
+    },
+}
