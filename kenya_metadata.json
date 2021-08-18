@@ -1,0 +1,91 @@
+
+{
+    "metadata":{
+        "start_time":"2014-09-24 00:00:00",
+        "end_time":"2015-10-09 23:59:00",
+        "time_zone": "CAT",
+        "implementing_organization": "Kilowatts for Humanity",
+        "sample_frequency_unit": "minutes",
+        "sample_frequency_value": 1,
+        "project_url":"http://www.kw4h.org",
+        "publications":[
+            "H. Louie, “Operational Analysis of Hybrid Solar/Wind Microgrids Using Measured Data,”
+            Energy for Sustainable Development, vol. 31, pp. 108–117, DOI: 10.1016/j.esd.2016.01.003,
+            Apr. 2016.",
+            "V. Van Acker, S. J. Szablya, H. Louie, A. Pirbhai and J. Sloughter, “Summary of Energy
+            Use and Costs in Rural Kenya for Community Microgrid Business Model Development,”
+            Proceedings of IEEE Global Humanitarian Technology Conference, San Jose, CA, Oct. 2014."
+        ],
+        "system_description": "4.8 kW hybrid solar/wind 
+        (2.8kW solar, 2 kW wind) energy kiosk; 48VDC station battery (8 each @ 6 VDC, 400Ah); 
+        3000VA inverter; charge controller with MMPT;  ",
+        "data_description": "The data are reported in Volts for battery voltage; watts for inverter AC power; Amps for diversion load, wind turbine and solar current. Multiply currents by battery voltage to estimate power.",
+        "contact_information":{
+            "name":"",
+            "email":"",
+        },
+        "location":{
+            "description":"Muhuru Bay, Kenya",
+        },
+        "funding_sources":[],
+        "errata": [
+            "the kiosk was installed beginning Sept. 24, 2014. The data are very intermittent, with gaps of several often days occurring. The diversion current sensor was connected around 25 December 2014. All sensor ratios have been accounted for in the data."
+            ],
+        "system":{
+            "type":"microgrid",
+            "nominal_voltage_v":48,
+            "system_diagram_url":"",
+            "generation":[
+                {
+                    "resource": "solar",
+                    "resource_type": "solar PV",
+                    "technology_type": "",
+                    "nameplate_capacity_kW":2.8,
+                    "description": "",
+                    "column_names": ["solar_a"]
+                },
+                {
+                    "resource": "wind",
+                    "resource_type": "wind",
+                    "technology_type": "",
+                    "nameplate_capacity_kW":2,
+                    "description": "",
+                    "column_names": ["wind_a"]
+                }
+            ],
+            "energy_storage":[
+                {
+                    "description":"battery storage",
+                    "number_of_units":8,
+                    "unit_info":{
+                        "unit_dc_v":6,
+                        "unit_ah":400,
+                    },
+                    "total_system_storage_ah":400,
+                    "column_names":["batt_v"]
+                }
+            ],
+            "distribution":[
+                {
+                    "voltage_level_v":120,
+                    "description":"3000VA inverter; charge controller with MMPT;",
+                    "network_diagram_url":""
+                }
+            ],
+            "load":[
+                {
+                    "description": "",
+                    "load_type":"mixed",
+                    "current_flow":"AC",
+                    "column_names": ["acpower_w"]
+                },
+                {
+                    "description": "diversion load",
+                    "load_type":"mixed",
+                    "current_flow":"DC",
+                    "column_names": ["dump_a"]
+                }
+            ],
+        },
+    }
+}
