@@ -5,3 +5,17 @@ These data are intended to be used by researchers and other professionals workin
 For any formal research outputs, please contact us so this can be linked to the associated research. Citation Information is provided below.
 
 This SESDC Energy Use Archive is made available under the Open Database License: http://opendatacommons.org/licenses/odbl/1.0/. Any rights in individual contents of the database are licensed under the Database Contents License: http://opendatacommons.org/licenses/dbcl/1.0/
+
+[![DOI](https://zenodo.org/badge/397462762.svg)](https://zenodo.org/badge/latestdoi/397462762)
+
+BIBTEX
+@misc{pdauenhauer_2021_5214966,
+  author       = {SESDC},
+  title        = {{SESDC-energy-use-archive}},
+  month        = aug,
+  year         = 2021,
+  publisher    = {Zenodo},
+  version      = {1.0},
+  doi          = {10.5281/zenodo.5214966},
+  url          = {https://doi.org/10.5281/zenodo.5214966}
+}
