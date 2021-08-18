@@ -1,0 +1,76 @@
+
+{
+    "metadata":{
+        "start_time":"2014-12-16 10:32:15",
+        "end_time":"2015-12-06 23:59:17",
+        "time_zone": "CAT",
+        "implementing_organization": "Wind Empowerment",
+        "sample_frequency_unit": "minutes",
+        "sample_frequency_value": 1,
+        "project_url":"http://windempowerment.org/blog/2016/02/06/wind-empowerment-project-in-ethiopia/",
+        "system_description": "3.6m rotor diameter locally manufactured small wind turbine, 
+                    installed at 12m hub height, and 600W of solar panels
+                    The off-grid electrical system consists of a 1kW inverter, 
+                    a 24V 750Ah battery bank and two diversion load charge controllers. ",
+        "data_description": "",
+        "contact_information":{
+            "name":"Aran Eales",
+            "email":"aran.eales@strath.ac.uk",
+        },
+        "location":{
+            "description":"A rural settlement in Sudan Camp, 50km away from Semara,Ethiopia",
+        },
+        "funding_sources":["USAID"],
+        "errata": [],
+        "system":{
+            "type":"microgrid",
+            "nominal_voltage_v":24,
+            "system_diagram_url":"",
+            "generation":[
+                {
+                    "resource": "solar",
+                    "resource_type": "solar PV",
+                    "technology_type": "",
+                    "nameplate_capacity_kW": 0.6,
+                    "description": "",
+                    "column_names": []
+                },
+                 {
+                    "resource": "wind",
+                    "resource_type": "wind",
+                    "technology_type": "locally manufactured turbine",
+                    "description": "12 meter hub height, 3.6 meter rotor diameter",
+                    "column_names": ["wind_ms_1"]
+                }
+            ],
+            "energy_storage":[
+                {
+                    "description":"battery storage in schoolhouse",
+                    "total_system_storage_ah":750,
+                    "column_names":["batt_v"]
+                }
+            ],
+            "distribution":[
+                {
+                    "voltage_level_v":120,
+                    "description": "500 W inverter",
+                    "network_diagram_url":""
+                }
+            ],
+            "load":[
+                {
+                    "description": "local shop of rural settlement",
+                    "load_type":"mixed",
+                    "current_flow":"AC",
+                    "column_names": ["load_a"]
+                },
+            ],
+            "other":[
+                {
+                    "description": "temperature measurement",
+                    "column_names": ["temp_c"]
+                }
+            ],
+        },
+    }
+}
