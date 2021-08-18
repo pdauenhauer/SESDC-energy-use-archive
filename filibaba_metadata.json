@@ -1,0 +1,80 @@
+
+{
+    "metadata":{
+        "start_time":"2014-09-24 00:00:00",
+        "end_time":"2015-10-09 23:59:00",
+        "time_zone": "CAT",
+        "implementing_organization": "Kilowatts for Humanity",
+        "sample_frequency_unit": "minutes",
+        "sample_frequency_value": 1,
+        "project_url":"http://www.kw4h.org",
+        "system_description": "1.8 kW solar energy kiosk; 24VDC station battery (4 each @ 12 VDC, 220Ah); 2000VA inverter; charge controller with MMPT; ",
+        "data_description": "The data are reported in Volts for battery voltage; watts for inverter AC power; Amps for diversion load, wind turbine and solar current. Multiply currents by battery voltage to estimate power.",
+        "publications":[
+            "H. Louie, M. Shields, S. J. Szablya, L. Makai and K. Shields “Design of an Off-Grid Energy
+            Kiosk in Rural Zambia,” Proceedings of IEEE Global Humanitarian Technology Conference,
+            DOI: 10.1109/GHTC.2015.7343946, Seattle, WA, Oct. 2015."
+        ],
+        "contact_information":{
+            "name":"",
+            "email":"",
+        },
+        "location":{
+            "description":"Filibaba, Zambia",
+        },
+        "funding_sources":[],
+        "errata": [
+            "the kiosk was installed beginning Sept. 14, 2015. Wiring errors were discovered and corrected on Oct. 24, 2016. The errors affected the energy meters (kiosk, lights, house 1 and house 2).  House 1 and House 2 were connected to kiosk on approximately February 10, 2016. House 1 previously served a church, however, their usage was very low and the meter was repurposed to measure House 1 consumption. However, because the meter is not able to be reset, the legacy consumption from the church appears as an offset of 191 pulses for House 1. The owner of House 1 was unable to afford to pay for energy for long periods, so the consumption is stagnant for several weeks. Beginning in June, the consumption increases. The meter for House 2 was originally a spare meter. It was wired on 27 February.",
+            "The energy kiosk outlet meter appears to have stopped sending regular pulses starting approximately March 1, 2016.",
+            " Some sensors have a DC offset (bias) that is requires correction (for example, small non-zero solar current values at night). The inverter offset is 0.0097, which is not accounted for in the data set."],
+        "system":{
+            "type":"microgrid",
+            "nominal_voltage_v":24,
+            "system_diagram_url":"",
+            "generation":[
+                {
+                    "resource": "solar",
+                    "resource_type": "solar PV",
+                    "technology_type": "",
+                    "nameplate_capacity_kW":1.8,
+                    "description": "",
+                    "column_names": ["solar_a"]
+                }
+            ],
+            "energy_storage":[
+                {
+                    "description":"battery storage",
+                    "number_of_units":4,
+                    "unit_info":{
+                        "unit_dc_v":12,
+                        "unit_ah":220,
+                    },
+                    "total_system_storage_ah":440,
+                    "column_names":["batt_v"]
+                }
+            ],
+            "distribution":[
+                {
+                    "voltage_level_v":120,
+                    "description":"2000VA inverter; charge controller with MMPT;",
+                    "network_diagram_url":"",
+                    "column_names":["inverter_a"],
+                }
+            ],
+            "load":[
+                {
+                    "description": "",
+                    "load_type":"mixed",
+                    "current_flow":"AC",
+                    "column_names": ["load_kwh_outlet","load_kwh_lights"]
+                }
+            ],
+            "other":[
+                {
+                    "description": "temperature measurement",
+                    "column_names": ["temp_c"]
+                }
+            ],
+        },
+    }
+}
