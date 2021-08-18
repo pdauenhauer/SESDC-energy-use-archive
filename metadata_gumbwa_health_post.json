@@ -1,0 +1,91 @@
+
+{
+    "metadata":{
+        "start_time":"2014-01-27 12:30:00",
+        "end_time":"2015-01-31 17:30:00",
+        "time_zone": "CAT",
+        "implementing_organization": "University of Strathclyde, WASHTED",
+        "sample_frequency_unit": "hour",
+        "sample_frequency_value": 1,
+        "project_url":"https://strath-e4d.com/",
+        "system_description": "320W Solar PV at a health post (4 each @ 80Wp); 12VDC station battery (5 each @ 101Ah 12 VDC, 505Ah)",
+        "data_description": "",
+        "contact_information":{
+            "name":"Peter Dauenhauer",
+            "email":"peter.dauenhauer@gmail.com",
+        },
+        "location":{
+            "description":"Located in Gumbwa Village, Chikwawa District",
+            "lat":""
+            "lng":""
+        },
+        "funding_sources":["Scottish Government"],
+        "errata": ["Data frequency is mixed, with a maximum of 1 hour, but as little as 15-minutes"
+
+            ],
+        "system":{
+            "type":"Stand-alone PV",
+            "nominal_voltage_v":12,
+            "system_diagram_url":"",
+            "generation":[
+                {
+                    "resource": "solar",
+                    "resource_type": "solar PV",
+                    "technology_type": "monochrystalline",
+                    "nameplate_capacity_kW":0.32,
+                    "description": "Roofmounted",
+                    "column_names": ["charge_a","solar_v"]
+                }
+            ],
+            "energy_storage":[
+                {
+                    "description":"battery storage in healthpost room",
+                    "number_of_units":5,
+                    "unit_info":{
+                        "unit_dc_v":12,
+                        "unit_ah":101,
+                    },
+                    "total_system_storage_ah":505,
+                    "column_names":["batt_v"]
+                }
+            ],
+            "distribution":[
+                {
+                    "voltage_level_v":NA,
+                    "length_m":NA,
+                    "network_diagram_url":NA
+                }
+            ],
+            "load":[
+                {
+                    "description": "Rural Health Post",
+                    "load_type":"lighting, indoor and outdoor",
+                    "current_flow":"DC",
+                    "column_names": ["load_a"]
+                }
+            ],
+            "other":[
+                {
+                    "description": NA,
+                    "column_names": NA
+                }
+            ],
+        },
+    },
+    "data":[
+        {
+        "datetime":"2014-01-27 12:30:00",
+        "batt_v":16.4,
+        "load_a":0,
+        "charge_a":6.2,
+        "solar_v":17
+        },
+        {
+         "datetime":"2015-01-31 17:30:00",
+        "batt_v":12.9,
+        "load_a":0.3,
+        "charge_a":0.4,
+        "solar_v":12.9
+        },
+    ]
+}
