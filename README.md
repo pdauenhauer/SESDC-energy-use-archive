@@ -8,15 +8,15 @@ This SESDC Energy Use Archive is made available under the Open Database License:
 
 When citing data from the Archive in academic publications, please cite as follows:
 
-BIBTEX
-@misc{SESDC_DB_EnergyUseArchive,
-author = {SESDC},
-title = “{SESDC Energy Use Archive}”,
-year = {2017},
-note = {Data Retrieved from IEEE PES Sustainable Energy Systems for Developing Communities Working Group (SESDC) Energy Use Archive, url: {http://site.ieee.org/pes-sesdc/output/data-sets/energy-use-archive/}},
-}
+#### BIBTEX
+  @misc{SESDC_DB_EnergyUseArchive,
+    author = {SESDC},
+    title = “{SESDC Energy Use Archive}”,
+    year = {2017},
+    note = {Data Retrieved from IEEE PES Sustainable Energy Systems for Developing Communities Working Group (SESDC) Energy Use Archive, url: {https://github.com/pdauenhauer/SESDC-energy-use-archive},
+  }
 
 
 
-APA
-> SESDC (2017). SESDC Energy Use Archive. Data Retrieved from IEEE PES Sustainable Energy Systems for Developing Communities Working Group (SESDC) Energy Use Archive, url: http://site.ieee.org/pessesdc/output/data-sets/energy-use-archive/
+#### APA
+SESDC (2017). SESDC Energy Use Archive. Data Retrieved from IEEE PES Sustainable Energy Systems for Developing Communities Working Group (SESDC) Energy Use Archive, url: https://github.com/pdauenhauer/SESDC-energy-use-archive
