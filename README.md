@@ -8,14 +8,16 @@ This SESDC Energy Use Archive is made available under the Open Database License:
 
 [![DOI](https://zenodo.org/badge/397462762.svg)](https://zenodo.org/badge/latestdoi/397462762)
 
-BIBTEX
-@misc{pdauenhauer_2021_5214966,
-  author       = {SESDC},
-  title        = {{SESDC-energy-use-archive}},
-  month        = aug,
-  year         = 2021,
-  publisher    = {Zenodo},
-  version      = {1.0},
-  doi          = {10.5281/zenodo.5214966},
-  url          = {https://doi.org/10.5281/zenodo.5214966}
-}
+Please cite as:
+
+#### BIBTEX  
+  @misc{pdauenhauer_2021_5214966,  
+    author       = {SESDC},  
+    title        = {{SESDC-energy-use-archive}},  
+    month        = aug,  
+    year         = 2021,  
+    publisher    = {Zenodo},  
+    version      = {1.0},  
+    doi          = {10.5281/zenodo.5214966},  
+    url          = {https://doi.org/10.5281/zenodo.5214966}  
+  }
